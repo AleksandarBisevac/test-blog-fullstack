@@ -2,9 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ArticleList from './pages/ArticleList';
+import ArticleListPage from './pages/ArticleListPage';
 import ArticlePage from './pages/ArticlePage';
-import NavBar from './Components/NavBar';
+import NotFoundPage from './pages/NotFoundPage';
+import NavBar from './Modules/NavBar';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Routes>
           <Route exact path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
-          <Route path='/articles' element={<ArticleList />} />
+          <Route path='/articles' element={<ArticleListPage />} />
           <Route path='/article/:name' element={<ArticlePage />} />
+          <Route path='*' element={<NotFoundPage />} />
         </Routes>
       </div>
     </Router>
