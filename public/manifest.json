@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "My Blog App",
+  "name": "My Blog - test Fullstack Web App",
   "icons": [
     {
       "src": "favicon.ico",
