@@ -38,7 +38,7 @@ const ArticlePage = () => {
     return <NotFoundPage />;
   }
 
-  return !loading && articles.length ? (
+  return !loading && articles.length && articleInfo.upvotes ? (
     <>
       <h1>This is the {articleInfo.title}</h1>
       <UpvotesSection
