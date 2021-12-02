@@ -10,7 +10,7 @@ import NavBar from './Modules/NavBar';
 function App() {
   return (
     <Router>
-      <div className='App'>
+      <div id='page-body' className='App'>
         <NavBar />
         <Routes>
           <Route exact path='/' element={<HomePage />} />
